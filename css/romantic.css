@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.men {
+    display: none;
+    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(rgb(12, 12, 12), rgb(59, 58, 58), gray);
+    z-index: 1;
+}
+
+.resp_menu {
+    display: none;
+}
+
+header {
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    height: 50px;
+    align-content: center;
+}
+
+.menu_toggle {
+    display: none;
+}
+
+header .home {
+    position: absolute;
+    margin-left: 20px;
+    color: blue !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav {
+    align-content: center;
+    height: 30px;
+}
+
+nav ul li {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 5px;
+}
+
+li span {
+    color: white;
+    padding: 0px 0px 6px 0px;
+}
+
+li span:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+nav .dropdown_menu {
+    position: absolute;
+    text-align: center;
+    height: fit-content;
+    position: fixed;
+    margin: 5px 0px;
+    display: none;
+}
+
+nav #menu {
+    float: left;
+}
+
+.dropdown_menu ul {
+    list-style: none;
+    padding: 5px 0px;
+    margin-top: 2px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+}
+
+.list li a {
+    text-decoration: none
+}
+
+.link_width li {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.link_width li a {
+    color: white;
+}
+
+.link_width li a:hover {
+    color: gray;
+}
+
+#gender a {
+    color: white;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+#gender a:hover {
+    color: gray;
+}
+
+#gender .dropdown_menu {
+    display: none;
+    background: linear-gradient(rgb(12, 12, 12), rgb(59, 58, 58), gray);
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+    border: none;
+}
+
+#gender:hover .dropdown_menu {
+    display: list-item;
+    position: absolute;
+    z-index: 1;
+}
+
+/*search bar*/
+.search {
+    text-align: center;
+    margin-top: 15px;
+}
+
+input {
+    padding: 0px 10px;
+}
+
+.search input {
+    width: 40em;
+    height: 30px;
+    border-radius: 15px;
+    border-width: 2px;
+}
+
+.search_button {
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 5px;
+    background: green;
+}
+
+.search_button:hover {
+    background: rgb(8, 146, 8);
+}
+
+input:placeholder-shown {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.image_click{
+    font-weight: bold;
+}
+
+.instruction{
+    font-size: 25px;
+    margin-left: 10px;
+    color: red;
+    text-decoration: underline;
+
+}
+
+/*photo*/
+
+.container {
+    width: 100%;
+}
+
+.photo .image_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.photo .image_list .img-item {
+    width: 300px;
+    height: 400px;
+    margin: 15px 15px;
+    border-radius: 15px;
+}
+
+.photo .image_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.image_list .img-item:hover {
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.romantic {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 40px;
+    text-shadow: 4px 5px 1px palevioletred;
+}
+
+/*responsive*/
+@media (max-width: 950px) {
+    .romantic{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    .list .link_width {
+        display: none;
+    }
+
+    .menu_toggle {
+        display: block;
+        width: 20px;
+        height: 15px;
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        float: right;
+        margin-right: 35px;
+        color: white;
+    }
+
+    .toggle {
+        position: relative;
+    }
+
+    .men {
+        float: right;
+        font-family: 'Qwitcher Grypen', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 10px;
+        padding: 20px 5px 5px 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: gray;
+    }
+
+    .gend {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .gend:hover .resp_menu {
+        display: block;
+    }
+
+    .gend:hover a span {
+        display: none;
+    }
+
+    .toggle:hover .men {
+        position: relative;
+        display: block;
+    }
+
+    .search input {
+        width: 35em;
+        height: 25px;
+        border-radius: 15px;
+    }
+
+    .search_button {
+        font-size: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 15px;
+        margin-left: 5px;
+        background: green;
+    }
+
+    .search_button:hover {
+        background: rgb(8, 146, 8);
+    }
+
+    .romantic{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .photo .image_list .img-item {
+        width: 350px;
+        height: 400px;
+        margin: 15px 15px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    header .home {
+        font-size: 1.2em;
+        margin-top: 2px;
+    }
+
+    .menu_toggle {
+        font-size: 20px;
+        margin-top: 2px;
+        margin-right: 20px;
+    }
+
+    .men {
+        font-size: 15px;
+    }
+
+    .search input {
+        width: 30em;
+        height: 25px;
+        border-radius: 15px;
+    }
+
+    .romantic{
+        font-size: 20px;
+    }
+}

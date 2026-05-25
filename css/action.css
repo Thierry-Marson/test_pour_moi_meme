@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: burlywood!important;
+}
+
+.romantic {
+    text-shadow: 4px 5px 5px red!important;
+}

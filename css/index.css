@@ -1,0 +1,109 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+.photo{
+    justify-content: center;
+}
+
+.main-head{
+    background-color:black;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.main-head .logo{
+    position: absolute;
+    margin-top: 7px;
+}
+
+ul{
+    margin-left: 55em;
+}
+
+ul li a{
+    display: block;  
+    margin: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    color: white;
+    padding: 10px;
+}
+
+.dropdown_menu{
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0;
+    margin-top: -20px;
+}
+
+.nav:hover .dropdown_menu{
+    position: absolute;
+    opacity: 1;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+.nav{
+    position: relative;
+}
+
+.main-head h1{
+    margin-left: 50px;
+    align-items: center;
+    font-family: 'Qwitcher Grypen',cursive;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a[href="index.html"]{
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav a:hover{
+    background-color: lightgrey;
+    border-radius: 15px;
+    background-size: 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: red;
+}
+
+.input{
+    position: absolute;
+    margin-top: 13em;
+    margin-left: 25em;
+    width: 50%;
+}
+
+input{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    align-items: center;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.342);
+    box-shadow: 0px 0px 5px black;
+}
+
+footer{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+}
